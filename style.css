@@ -6,7 +6,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 70vh;
 }
 body.light-theme {
     background-color: #f4f4f4;
@@ -72,27 +72,48 @@ select {
         background-color: #f9f9f9;
         border: 1px solid #ddd;
         border-radius: 5px;
-        height: 80px;
+        height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
         box-sizing: border-box;
     }
     .footer {
-        background-color: #333;  /* Dark background */
-        color: white;  /* White text color */
-        text-align: center;  /* Center the text */
-        padding: 10px 0;  /* Padding for top and bottom */
-        position: fixed;  /* Fix the footer at the bottom */
-        width: 100%;  /* Ensure it stretches across the entire width */
-        bottom: 0;  /* Align to the bottom of the page */
-        font-size: 14px;  /* Slightly smaller font size */
-        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);  /* Subtle shadow for depth */
+        background-color: #333; 
+        color: white; 
+        text-align: center;  
+        padding: 10px 0;  
+        position: fixed;  
+        width: 100%;  
+        bottom: 0;  
+        font-size: 14px;  
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);  
     }
     
     /* Optional hover effect for footer text */
     .footer:hover {
         background-color: #444;  /* Slightly lighter on hover */
+    }
+
+    .font-controls {
+        margin-bottom: 20px;
+    }
+    
+    .font-controls button {
+        font-size: 18px;
+        padding: 10px 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f4f4f4;
+        color: #333;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        margin: 0 5px;
+    }
+    
+    .font-controls button:hover {
+        background-color: #ddd;
+        color: #000;
     }
 
 /* Mobile responsiveness */

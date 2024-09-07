@@ -106,3 +106,23 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+const increaseFontButton = document.getElementById('increase-font');
+const decreaseFontButton = document.getElementById('decrease-font');
+
+let currentFontSize = 18; // Default font size in px
+
+increaseFontButton.addEventListener('click', function() {
+    if(currentFontSize<26){
+    currentFontSize += 2; // Increase font size by 2px
+    quoteDiv.style.fontSize = `${currentFontSize}px`;
+    }
+    
+});
+
+decreaseFontButton.addEventListener('click', function() {
+    if (currentFontSize > 8) { // Minimum font size to prevent it from becoming too small
+        currentFontSize -= 2; // Decrease font size by 2px
+        quoteDiv.style.fontSize = `${currentFontSize}px`;
+    }
+});
