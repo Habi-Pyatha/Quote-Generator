@@ -4,6 +4,7 @@ const nextButton=document.getElementById("next")
 const previousButton=document.querySelector('#previous')
 const randomButton=document.querySelector('#random')
 const quoteDiv=document.querySelector('.quote')
+const container = document.querySelector('.container');
 
 console.log(categorySelect);
 
@@ -100,9 +101,13 @@ document.addEventListener('DOMContentLoaded', function () {
         if (this.checked) {
             body.classList.remove('light-theme');
             body.classList.add('dark-theme');
+            container.classList.remove('container');
+            container.classList.add('darkcontainer');
         } else {
             body.classList.remove('dark-theme');
             body.classList.add('light-theme');
+            container.classList.remove('darkcontainer');
+            container.classList.add('container');
         }
     });
 });

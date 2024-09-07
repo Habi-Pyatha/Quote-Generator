@@ -26,12 +26,29 @@ body.dark-theme {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     width: 400px;
 }
+.darkcontainer {
+    text-align: center;
+    background-color: #333333; /* Dark background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow */
+    width: 400px;
+    color: #ffffff; /* White text color for contrast */
+    
+}
 
 
 h1 {
+    /* background-color: #ddd; */
     font-size: 24px;
     color: #333333;
     margin-bottom: 20px;
+    
+    text-shadow: 
+        1px 1px 0 #ffffff, 
+        -1px -1px 0 #ffffff, 
+        1px -1px 0 #ffffff, 
+        -1px 1px 0 #ffffff; 
 }
 select {
     padding: 10px;
