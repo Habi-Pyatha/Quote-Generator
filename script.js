@@ -89,3 +89,20 @@ randomButton.addEventListener('click',function(){
    
 })
 displayQuote(currentCategory,currentIndex)
+
+// Wait until the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', function () {
+    const body = document.body;  // Reference to the body element
+    const themeSwitch = document.getElementById('theme-switch');  // The checkbox
+
+    // Function to toggle themes based on checkbox state
+    themeSwitch.addEventListener('change', function () {
+        if (this.checked) {
+            body.classList.remove('light-theme');
+            body.classList.add('dark-theme');
+        } else {
+            body.classList.remove('dark-theme');
+            body.classList.add('light-theme');
+        }
+    });
+});

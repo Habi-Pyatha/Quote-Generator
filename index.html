@@ -7,21 +7,31 @@
 </head>
 <link rel="stylesheet" href="style.css">
 
-<body>
-    
-    <h1>Quote Generator</h1>
+<body class="light-theme">
+    <div class="container">
 
-    <select name="category" id="category">
-        <option value="Science">Science</option>
-        <option value="Finance">Finance</option>
-        <option value="Famous">Famous</option>
-    </select>
-    <button id="next">Next</button>
-    <button id="previous">Previous</button>
-    <button id="random">Random</button>
-   <script src="script.js"></script>
-
-    <div class="quote"></div>
+        <h1>Quote Generator</h1>
+        <label>
+            <input type="checkbox" id="theme-switch"> Dark Mode
+        </label>
+        
+        <select name="category" id="category">
+            <option value="Science">Science</option>
+            <option value="Finance">Finance</option>
+            <option value="Famous">Famous</option>
+        </select>
+        <br>
+        <button id="next" class="myButton">Next</button>
+        <button id="previous" class="myButton">Previous</button>
+        <button id="random" class="myButton">Random</button>
+        
+        <div class="quote"></div>
+        <script src="script.js"></script>
+    </div>
 
 </body>
+
+<div class="footer">
+    &copy;Copyright by Habi
+</div>
 </html>
